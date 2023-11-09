@@ -10,3 +10,9 @@ Notes
     * Tuesday is the safest day to bet upwards
     * Friday is the safest day to bet within the same range in which it open
     
+ ## Things to Watch
+ * We one hot encoded the day of the week feature. if we learn it isnt a valuable feature then we will reload the data and drop that column from the dataset compeltely
+ 
+ 
+ ## Things to Try
+We are going to move further with the datast and features we hvae to predict price. However, as we complete our first models we will get more intraday data such as price at every hour, volume of trades at every hour, and other stock indicators that track intraday movement to give our models more information.
