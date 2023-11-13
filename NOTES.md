@@ -1,8 +1,6 @@
 ## To DO List
 
-* Read in new data to make it current
-* Graph the trend of gap between open and close/high and low over time to capture trends
-* Graph the above trend on specific days of the week
+
 * We need to build a few model
     * Accurately predict the close within a range of +- 50 on the data we already have
         * Graph the above model to understand how far of the actual close was our prediction
