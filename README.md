@@ -25,6 +25,8 @@ Kalshi Predictor is a sophisticated stock price prediction tool built to forecas
 To start the streamlit app, run:
 `streamlit run kalshi_app.py`
 
+Be sure to update the dataset for the model daily. The correct files to do so would be '04' for updating data and '03' for executing the model. Will work on hosting slution that will update data daily.
+
 ## Images
 ![Alt text for the image](images/kalshi_app_img_1.png)
 ![Alt text for the image](images/kalshi_app_img_2.png)
