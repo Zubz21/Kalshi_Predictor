@@ -1,5 +1,5 @@
 # Kalshi Predictor
----
+
 
 ## Project Description
 Kalshi Predictor is a sophisticated stock price prediction tool built to forecast the closing price of the NASDAQ 100 for the day off. Utilizing the power of machine learning with an XGBoost model, this tool analyzes historical stock data since January 1, 2018, to make daily predictions based on a set of financial indicators.
