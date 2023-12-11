@@ -27,7 +27,7 @@ To start the streamlit app, run:
 
 ## Images
 ![Alt text for the image](images/kalshi_app_img_1.png)
-
+![Alt text for the image](images/kalshi_app_img_2.png)
 
 ## Dataset
 Our dataset comprises Nasdaq 100 data spanning the last 5 years, from 2019 to the present.
