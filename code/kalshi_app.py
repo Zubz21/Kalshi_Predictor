@@ -10,6 +10,7 @@ with open('xgboost_model.pkl', 'rb') as file:
 st.title('Stock Close Price Prediction')
 
 # Create inputs for each feature
+open_p = st.number_input('Open Price', format='%.10f')
 avg_oc_spread_10_day = st.number_input('Average Open-Close Spread Over 10 Days', format='%.10f')
 avg_volume_10_day = st.number_input('Average Volume Over 10 Days', format='%.10f')
 volatility_10_day = st.number_input('Volatility Over 10 Days', format='%.10f')
@@ -27,7 +28,7 @@ macd = st.number_input('MACD', format='%.10f')
 
 # When the 'Predict' button is clicked, make a prediction and display it
 if st.button('Predict'):
-    features = np.array([[avg_oc_spread_10_day, avg_volume_10_day, volatility_10_day,
+    features = np.array([[open_p,avg_oc_spread_10_day, avg_volume_10_day, volatility_10_day,
                           price_change_magnitude, price_direction, ma_volume_ratio,
                           close_lag_5, close_lag_4, close_lag_3, close_lag_2,
                           close_lag_1, shortema, longema, macd]])
@@ -47,7 +48,7 @@ interval_range = 1.96 * std_dev_residuals
 
 # When the 'Predict' button is clicked, make a prediction and display it
 if st.button('Predict Range'):
-    features = np.array([[avg_oc_spread_10_day, avg_volume_10_day, volatility_10_day,
+    features = np.array([[open_p, avg_oc_spread_10_day, avg_volume_10_day, volatility_10_day,
                           price_change_magnitude, price_direction, ma_volume_ratio,
                           close_lag_5, close_lag_4, close_lag_3, close_lag_2,
                           close_lag_1, shortema, longema, macd]])
