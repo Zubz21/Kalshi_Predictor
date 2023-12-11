@@ -26,6 +26,7 @@ To start the streamlit app, run:
 `streamlit run kalshi_app.py`
 
 ## Images
+![Alt text for the image](images/kalshi_app_1.png)
 
 
 ## Dataset
