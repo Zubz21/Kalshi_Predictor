@@ -1,14 +1,32 @@
-# Nasdaq 100 Closing Price Range Prediction
----
+# Kalshi Predictor
 
-## Problem Statement
-Financial markets, though seemingly random, are influenced by a myriad of factors ranging from macroeconomic indicators to investor sentiment. A significant challenge in the world of trading and investment is predicting where a specific index or stock will close on any given day. This project focuses on the Nasdaq 100 index, aiming to predict the closing price range based on historical data. By accurately predicting the range in which the Nasdaq 100 will close, we can make more informed financial decisions, potentially leading to profitable trading strategies.
 
-#### Objectives
-**1. Predict the range within which the Nasdaq 100 will close on a particular day.**
-**2. Understand the features that most influence these predictions.**
+## Project Description
+Kalshi Predictor is a sophisticated stock price prediction tool built to forecast the closing price of the NASDAQ 100 for the day off. Utilizing the power of machine learning with an XGBoost model, this tool analyzes historical stock data since January 1, 2018, to make daily predictions based on a set of financial indicators.
 
----
+
+## Technolgoies Used
+* Python
+* XGBoost
+* Streamlit
+* Pandas
+* NumPy
+* Scikit-Learn
+
+## Installation and Setup
+1. Clone the repository
+`git clone https://github.com/Zubz21/Kalshi_Predictor.git`
+2. Navigate to the repository
+`cd Kalshi_Predictor`
+3. Install the required dependencies
+`pip install -r requirements.txt`
+
+## Usage
+To start the streamlit app, run:
+`streamlit run kalshi_app.py`
+
+## Images
+
 
 ## Dataset
 Our dataset comprises Nasdaq 100 data spanning the last 5 years, from 2019 to the present.
@@ -43,20 +61,6 @@ Our dataset comprises Nasdaq 100 data spanning the last 5 years, from 2019 to th
 24. **MACD_Histogram**: Represents the difference between MACD and its SignalLine. Helps visualize when the MACD is above or below the SignalLine. Positive values indicate bullish momentum, while negative values indicate bearish momentum.
 25. **RSI (Relative Strength Index)**: Ranges from 0 to 100 and measures the speed and change of price movements. An RSI above 70 is typically considered overbought (indicating it might be overvalued and is a good candidate for selling), while an RSI below 30 is considered oversold (indicating potential undervaluation and might be a good buying opportunity). Helps traders identify potential reversals in price trends.
 
-#### Target Variable
-The range within which the Nasdaq 100 closes on a particular day. Ranges are defined in increments of 100 points (e.g., 14600-14700, 14700-14800).
-
----
-
-## Models & Techniques
-Given the nature of the problem (multiclass classification), a variety of machine learning models, including but not limited to Random Forests, Gradient Boosting Machines (like XGBoost), and Neural Networks, are employed. Time series considerations, feature engineering, and data transformations are utilized to optimize predictions.
-
----
-
-## Evaluation
-Models are evaluated based on metrics suitable for multiclass classification, such as accuracy, F1-score, precision, recall, and the confusion matrix. Special attention is given to minimizing false positives or false negatives to align with financial objectives.
-
----
 
 ## Contributions:
 Contributions are welcome! Please fork the repository and open a pull request with your changes, or open an issue to discuss a potential change.
