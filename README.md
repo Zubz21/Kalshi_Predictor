@@ -1,6 +1,17 @@
-# Nasdaq 100 Closing Price Range Prediction
+# Kalshi Predictor
 ---
 
+## Project Description
+Kalshi Predictor is a sophisticated stock price prediction tool built to forecast the closing price of the NASDAQ 100 for the day of. Utilizing the power of machine learning with an XGBoost model, this tool analyzes historical stock data since January 1, 2018, to make daily predictions based on a set of financial indicators.
+---
+## Technolgoies Used
+* Python
+* XGBoost
+* Streamlit
+* Pandas
+* NumPy
+* Scikit-Learn
+---
 ## Problem Statement
 Financial markets, though seemingly random, are influenced by a myriad of factors ranging from macroeconomic indicators to investor sentiment. A significant challenge in the world of trading and investment is predicting where a specific index or stock will close on any given day. This project focuses on the Nasdaq 100 index, aiming to predict the closing price range based on historical data. By accurately predicting the range in which the Nasdaq 100 will close, we can make more informed financial decisions, potentially leading to profitable trading strategies.
 
